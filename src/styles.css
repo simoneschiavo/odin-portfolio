@@ -127,7 +127,7 @@ h3 {
 /* Main Section */
 
 main {
-  padding: var(--skew-padding) 5rem 0;
+  padding: var(--skew-padding) 5rem;
   display: flex;
   flex-direction: column;
   gap: var(--big-padding);
@@ -137,11 +137,17 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3rem;
+  align-items: stretch;
 }
 
 article {
   display: flex;
   flex-direction: column;
+}
+
+article > img {
+  height: 350px;
+  object-fit: cover;
 }
 
 .suspect-infos {
@@ -150,6 +156,7 @@ article {
   gap: var(--small-padding);
   padding: var(--normal-padding);
   box-shadow: var(--shadow);
+  flex-grow: 1;
 }
 
 .suspect-title-container {
