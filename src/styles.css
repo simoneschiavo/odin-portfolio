@@ -172,3 +172,35 @@ article > img {
 .suspect-contacts > img {
   width: 25px;
 }
+
+/* Footer */
+
+footer {
+  padding: var(--skew-padding) 5rem;
+  color: #FFF;
+  background-color: var(--red-john-red);
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--big-padding);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-padding);
+}
+
+.contact-info img {
+  width: 25px;
+  fill: #FFF;
+}
+
+.phone-number, .email {
+  display: flex;
+  gap: var(--small-padding);
+}
+
+footer .social-icons {
+  margin-right: auto;
+  margin-left: 0;
+}
