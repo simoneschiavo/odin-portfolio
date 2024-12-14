@@ -4,7 +4,7 @@
 
 :root {
   line-height: 1.5;
-  --light-blue: #0891b2;
+  --red-john-red: #7A0703;
   --normal-padding: 1rem;
   --big-padding: 2rem;
   --small-padding: 0.5rem;
@@ -59,11 +59,15 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 /* Header */
 
 .diagonal-box {
   position: relative;
-  padding: var(--skew-padding) 0 0;
+  padding: var(--skew-padding) 5rem 0;
 }
 
 .diagonal-box::before {
@@ -73,7 +77,7 @@ h2 {
   right: 0;
   bottom: 10vh;
   left: 0;
-  background-color: var(--light-blue);
+  background-color: var(--red-john-red);
   transform: skewY(-11deg);
   transform-origin: 50% 0;
 }
@@ -81,6 +85,7 @@ h2 {
 .about-container {
   position: relative;
   margin: 0 auto;
+  padding: var(--skew-padding) 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,9 +96,9 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-h1 {
+.image-container > h1 {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0.25rem;
   left: 0;
   width: 100%;
   text-align: center;
@@ -122,5 +127,41 @@ h1 {
 /* Main Section */
 
 main {
-  padding: var(--skew-padding) 0;
+  padding: var(--skew-padding) 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-padding);
+}
+
+.suspects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.suspect-infos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-padding);
+  padding: var(--normal-padding);
+  box-shadow: var(--shadow);
+}
+
+.suspect-title-container {
+  display: flex;
+}
+
+.suspect-contacts {
+  display: flex;
+  gap: var(--small-padding);
+  margin-left: auto;
+}
+
+.suspect-contacts > img {
+  width: 25px;
 }
