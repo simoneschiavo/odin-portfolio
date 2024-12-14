@@ -4,7 +4,7 @@
 
 :root {
   line-height: 1.5;
-  --red-john-red: #7A0703;
+  --red-john-red: #7a0703;
   --normal-padding: 1rem;
   --big-padding: 2rem;
   --small-padding: 0.5rem;
@@ -50,7 +50,7 @@ img {
 /* General */
 h1 {
   font-size: 2.5rem;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ h3 {
 }
 
 .about {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -178,7 +178,7 @@ article > img {
 
 footer {
   padding: var(--skew-padding) 5rem;
-  color: #FFF;
+  color: #fff;
   background-color: var(--red-john-red);
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -193,10 +193,11 @@ footer {
 
 .contact-info img {
   width: 25px;
-  fill: #FFF;
+  fill: #fff;
 }
 
-.phone-number, .email {
+.phone-number,
+.email {
   display: flex;
   gap: var(--small-padding);
 }
@@ -204,4 +205,30 @@ footer {
 footer .social-icons {
   margin-right: auto;
   margin-left: 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Styles for tablets */
+}
+
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    .about-container {
+      flex-direction: column;
+    }
+
+    .about {
+      max-width: 100%;
+    }
+
+    .about .social-icons {
+      margin: 0 auto;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
 }
